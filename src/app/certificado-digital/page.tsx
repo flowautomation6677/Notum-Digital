@@ -21,6 +21,7 @@ import { Card } from "@/components/ui/card";
 import { Accordion, FAQItem } from "@/components/ui/accordion";
 import { WhatsAppFloating } from "@/components/ui/whatsapp-floating";
 import { NotumGeometricPattern, TechnicalGridOverlay } from "@/components/brand/geometric-pattern";
+import { GoogleReviewsSection } from "@/components/brand/google-reviews-section";
 import { getWhatsAppLink } from "@/lib/utils";
 
 export const metadata: Metadata = {
@@ -476,44 +477,14 @@ export default function CertificadoDigitalPage() {
         </section>
 
         {/* =========================================================
-            5. PROVA SOCIAL
+            5. PROVA SOCIAL & AVALIAÇÕES GOOGLE 5 ESTRELAS
         ========================================================= */}
-        <section className="py-24 bg-[#141e23] border-b border-brand-slate/20">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-              <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
-                Quem já resolveu com a Notum não faz isso sozinho de novo
-              </h2>
-              <p className="text-base text-gray-300">
-                Empresas e contadores que confiam na velocidade e precisão da Notum.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <div className="p-8 rounded-2xl bg-brand-petroleum-card border border-brand-slate/30 space-y-4">
-                <div className="flex text-brand-sky gap-1">★★★★★</div>
-                <p className="text-base text-gray-200 italic leading-relaxed">
-                  &quot;Meu certificado venceu na pior hora e a Notum resolveu no mesmo dia. Atendimento ágil e sem enrolação.&quot;
-                </p>
-                <div className="pt-3 border-t border-brand-slate/20">
-                  <span className="block font-bold text-white text-sm">Diretor Financeiro</span>
-                  <span className="text-xs text-gray-400">Empresa de Logística · RJ</span>
-                </div>
-              </div>
-
-              <div className="p-8 rounded-2xl bg-brand-petroleum-card border border-brand-slate/30 space-y-4">
-                <div className="flex text-brand-sky gap-1">★★★★★</div>
-                <p className="text-base text-gray-200 italic leading-relaxed">
-                  &quot;Fizemos a validação por videoconferência com total comodidade. Recomendo para qualquer empresa que precisa de rapidez.&quot;
-                </p>
-                <div className="pt-3 border-t border-brand-slate/20">
-                  <span className="block font-bold text-white text-sm">Contador Parceiro</span>
-                  <span className="text-xs text-gray-400">Escritório Contábil</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <GoogleReviewsSection
+          id="avaliacoes"
+          title="Quem emite certificado na Notum avalia com 5 estrelas"
+          subtitle="Veja o que clientes reais, contadores e empresários comentam publicamente sobre nossa agilidade e suporte no Google."
+          whatsappMessage="Olá! Vi as avaliações 5 estrelas da Notum no Google e gostaria de emitir meu Certificado Digital."
+        />
 
         {/* =========================================================
             6. PERGUNTAS FREQUENTES (COLUNA ÚNICA MAX-W-3XL)

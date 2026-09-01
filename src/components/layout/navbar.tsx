@@ -63,6 +63,13 @@ export function Navbar() {
               Diferenciais
             </a>
             <a
+              href="#avaliacoes"
+              className="text-sm font-medium text-gray-300 hover:text-brand-sky transition-colors flex items-center gap-1"
+            >
+              <span>Avaliações</span>
+              <span className="text-amber-400 text-xs">★ 5.0</span>
+            </a>
+            <a
               href="#faq"
               className="text-sm font-medium text-gray-300 hover:text-brand-sky transition-colors"
             >
@@ -135,6 +142,14 @@ export function Navbar() {
               className="text-sm font-medium text-gray-200 hover:text-brand-sky p-2 rounded-lg hover:bg-brand-slate/20"
             >
               Diferenciais
+            </a>
+            <a
+              href="#avaliacoes"
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-sm font-medium text-gray-200 hover:text-brand-sky p-2 rounded-lg hover:bg-brand-slate/20 flex items-center justify-between"
+            >
+              <span>Avaliações no Google</span>
+              <span className="text-amber-400 text-xs font-bold">★ 5.0 (18)</span>
             </a>
             <a
               href="#faq"

@@ -1,8 +1,15 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { MapPin, Phone, Mail, Instagram, ShieldCheck, ArrowUpRight } from "lucide-react";
-import { NOTUM_ADDRESS, NOTUM_CNPJ, NOTUM_PHONE_DISPLAY, getWhatsAppLink } from "@/lib/utils";
+import { MapPin, Phone, Mail, Instagram, Facebook, ShieldCheck, ArrowUpRight } from "lucide-react";
+import {
+  NOTUM_ADDRESS,
+  NOTUM_CNPJ,
+  NOTUM_PHONE_DISPLAY,
+  NOTUM_FACEBOOK_URL,
+  NOTUM_INSTAGRAM_URL,
+  getWhatsAppLink,
+} from "@/lib/utils";
 
 export function Footer() {
   return (
@@ -47,6 +54,12 @@ export function Footer() {
               <li>
                 <a href="#diferenciais" className="hover:text-brand-sky transition-colors">
                   Por que confiar na Notum
+                </a>
+              </li>
+              <li>
+                <a href="#avaliacoes" className="hover:text-brand-sky transition-colors flex items-center gap-1.5">
+                  <span>Avaliações no Google</span>
+                  <span className="text-amber-400 text-xs">★★★★★</span>
                 </a>
               </li>
               <li>
@@ -101,12 +114,23 @@ export function Footer() {
               <li className="flex items-center gap-3 pt-1">
                 <Instagram className="w-4 h-4 text-brand-sky flex-shrink-0" />
                 <a
-                  href="https://www.instagram.com/notumdigital"
+                  href={NOTUM_INSTAGRAM_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-brand-sky transition-colors text-xs sm:text-sm"
                 >
-                  @notumdigital
+                  @notumdigital (Instagram)
+                </a>
+              </li>
+              <li className="flex items-center gap-3">
+                <Facebook className="w-4 h-4 text-brand-sky flex-shrink-0" />
+                <a
+                  href={NOTUM_FACEBOOK_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-brand-sky transition-colors text-xs sm:text-sm"
+                >
+                  Notum Digital no Facebook
                 </a>
               </li>
             </ul>

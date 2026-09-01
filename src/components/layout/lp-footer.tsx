@@ -1,11 +1,20 @@
 import React from "react";
 import Image from "next/image";
-import { NOTUM_ADDRESS, NOTUM_CNPJ, NOTUM_PHONE_DISPLAY, getWhatsAppLink } from "@/lib/utils";
+import { Instagram, Facebook } from "lucide-react";
+import {
+  NOTUM_ADDRESS,
+  NOTUM_CNPJ,
+  NOTUM_PHONE_DISPLAY,
+  NOTUM_GOOGLE_MAPS_URL,
+  NOTUM_FACEBOOK_URL,
+  NOTUM_INSTAGRAM_URL,
+  getWhatsAppLink,
+} from "@/lib/utils";
 
 export function LPFooter() {
   return (
     <footer className="bg-[#10171b] border-t border-brand-slate/20 text-gray-400 py-10">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-4">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-5">
         <div className="relative h-10 w-40 mx-auto opacity-80 hover:opacity-100 transition-opacity">
           <Image
             src="/brand/logo/logo-horizontal-fundo-escuro.png"
@@ -28,10 +37,35 @@ export function LPFooter() {
           </a>
           <span className="hidden sm:inline text-brand-slate">•</span>
           <a
-            href="mailto:contato@notumtecnologia.com.br"
-            className="hover:text-brand-sky transition-colors"
+            href={NOTUM_GOOGLE_MAPS_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white transition-colors text-amber-400 font-semibold"
           >
-            contato@notumtecnologia.com.br
+            ★ 5.0 no Google (18 avaliações)
+          </a>
+        </div>
+
+        {/* Redes Sociais */}
+        <div className="flex items-center justify-center gap-6 pt-1 text-xs">
+          <a
+            href={NOTUM_INSTAGRAM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 text-gray-400 hover:text-brand-sky transition-colors"
+          >
+            <Instagram className="w-4 h-4 text-brand-sky" />
+            <span>Instagram</span>
+          </a>
+          <span className="text-brand-slate">•</span>
+          <a
+            href={NOTUM_FACEBOOK_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 text-gray-400 hover:text-brand-sky transition-colors"
+          >
+            <Facebook className="w-4 h-4 text-brand-sky" />
+            <span>Facebook</span>
           </a>
         </div>
 

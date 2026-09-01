@@ -22,6 +22,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, FAQItem } from "@/components/ui/accordion";
 import { WhatsAppFloating } from "@/components/ui/whatsapp-floating";
 import { NotumGeometricPattern, TechnicalGridOverlay } from "@/components/brand/geometric-pattern";
+import { GoogleReviewsSection } from "@/components/brand/google-reviews-section";
 import { getWhatsAppLink } from "@/lib/utils";
 
 export default function HomePage() {
@@ -495,68 +496,14 @@ export default function HomePage() {
         </section>
 
         {/* =========================================================
-            5. PROVA SOCIAL & AUTORIDADE
+            5. PROVA SOCIAL & AVALIAÇÕES GOOGLE 5 ESTRELAS
         ========================================================= */}
-        <section className="py-24 bg-[#141e23] border-b border-brand-slate/20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-              <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
-                Quem já confia na Notum
-              </h2>
-              <p className="text-base text-gray-300">
-                Empresas, contabilidades e profissionais que contam com a nossa agilidade técnica diariamente.
-              </p>
-            </div>
-
-            {/* Grid de Depoimentos e Pilares de Confiança */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <Card variant="petroleum" className="space-y-4">
-                <div className="flex items-center gap-1 text-brand-sky">
-                  {[...Array(5)].map((_, i) => (
-                    <span key={i} className="text-lg">★</span>
-                  ))}
-                </div>
-                <p className="text-sm text-gray-300 italic leading-relaxed">
-                  &quot;A Notum resolveu nosso certificado digital e-CNPJ no mesmo dia. Atendimento muito transparente e objetivo.&quot;
-                </p>
-                <div className="pt-2 border-t border-brand-slate/20">
-                  <span className="block font-bold text-white text-sm">Cliente Corporativo</span>
-                  <span className="text-xs text-gray-400">Escritório Contábil · RJ</span>
-                </div>
-              </Card>
-
-              <Card variant="petroleum" className="space-y-4">
-                <div className="flex items-center gap-1 text-brand-sky">
-                  {[...Array(5)].map((_, i) => (
-                    <span key={i} className="text-lg">★</span>
-                  ))}
-                </div>
-                <p className="text-sm text-gray-300 italic leading-relaxed">
-                  &quot;Excelente suporte técnico. É raro encontrar um fornecedor que resolve assistência e certificação sem burocracia.&quot;
-                </p>
-                <div className="pt-2 border-t border-brand-slate/20">
-                  <span className="block font-bold text-white text-sm">Empresa de Serviços</span>
-                  <span className="text-xs text-gray-400">Comércio & Logística</span>
-                </div>
-              </Card>
-
-              <Card variant="petroleum" className="space-y-4">
-                <div className="flex items-center gap-1 text-brand-sky">
-                  {[...Array(5)].map((_, i) => (
-                    <span key={i} className="text-lg">★</span>
-                  ))}
-                </div>
-                <p className="text-sm text-gray-300 italic leading-relaxed">
-                  &quot;O atendimento por videoconferência foi rápido e evitou que nossa emissão de notas fiscais ficasse parada.&quot;
-                </p>
-                <div className="pt-2 border-t border-brand-slate/20">
-                  <span className="block font-bold text-white text-sm">Profissional Liberal</span>
-                  <span className="text-xs text-gray-400">e-CPF Certificado</span>
-                </div>
-              </Card>
-            </div>
-          </div>
-        </section>
+        <GoogleReviewsSection
+          id="avaliacoes"
+          title="O que nossos clientes dizem no Google"
+          subtitle="Empresas, contabilidades e profissionais que contam com a nossa agilidade técnica e atendimento nota 10 diariamente."
+          whatsappMessage="Olá! Vi as avaliações no Google e gostaria de falar com a equipe da Notum."
+        />
 
         {/* =========================================================
             6. PERGUNTAS FREQUENTES
