@@ -103,7 +103,7 @@ export default function HomePage() {
 
                 {/* Subtítulo Parágrafo */}
                 <p className="text-base sm:text-lg text-gray-300 max-w-2xl leading-relaxed">
-                  A Notum Tecnologia une produtos, assistência técnica e certificação digital em um único parceiro confiável — para empresas que não podem errar.
+                  A Notum Tecnologia une produtos, assistência técnica e certificação digital em um único parceiro confiável para empresas que não podem errar.
                 </p>
 
                 {/* Ações de Conversão */}
