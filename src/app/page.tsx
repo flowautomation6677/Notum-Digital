@@ -24,6 +24,7 @@ import { WhatsAppFloating } from "@/components/ui/whatsapp-floating";
 import { NotumGeometricPattern, TechnicalGridOverlay } from "@/components/brand/geometric-pattern";
 import { GoogleReviewsSection } from "@/components/brand/google-reviews-section";
 import { FounderSection } from "@/components/brand/founder-section";
+import { HeroAuthorityCard } from "@/components/brand/hero-authority-card";
 import { getWhatsAppLink } from "@/lib/utils";
 
 export default function HomePage() {
@@ -64,46 +65,35 @@ export default function HomePage() {
         ========================================================= */}
         <section
           id="hero-section"
-          className="relative min-h-[92vh] flex items-center justify-center pt-32 pb-20 overflow-hidden bg-gradient-brand-subtle"
+          className="relative min-h-[90vh] flex items-center justify-center pt-32 pb-24 overflow-hidden bg-gradient-brand-subtle"
         >
           {/* Background Textures */}
-          <NotumGeometricPattern opacity={0.12} />
-          <TechnicalGridOverlay />
-
-          {/* Símbolo d'água grande no fundo à direita com baixa opacidade */}
+          <NotumGeometricPattern opacity={0.18} />
           <div
-            className="absolute -right-20 -bottom-20 w-[480px] h-[480px] lg:w-[680px] lg:h-[680px] opacity-[0.04] pointer-events-none select-none"
+            className="absolute inset-0 bg-gradient-to-r from-[#131b2c]/80 via-[#18242A]/35 to-[#131b2c]/55 pointer-events-none"
             aria-hidden="true"
-          >
-            <Image
-              src="/brand/logo/simbolo-fundo-escuro.png"
-              alt=""
-              fill
-              className="object-contain"
-            />
-          </div>
+          />
+          <TechnicalGridOverlay className="opacity-30" />
 
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-10">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
               {/* Coluna Texto (7 Colunas no Desktop) */}
               <div className="lg:col-span-7 space-y-6 text-left">
                 {/* Badge de Autoridade */}
-                <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-brand-sky/10 border border-brand-sky/30 text-brand-sky text-xs font-semibold uppercase tracking-wider">
-                  <ShieldCheck className="w-4 h-4 text-brand-sky" />
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-navy/60 border border-brand-sky/30 text-brand-sky text-[11px] sm:text-xs font-semibold uppercase tracking-wider backdrop-blur-sm">
+                  <ShieldCheck className="w-3.5 h-3.5 text-brand-sky flex-shrink-0" aria-hidden="true" />
                   <span>Em atividade desde 1998 · Mesquita (RJ) e todo o Brasil</span>
                 </div>
 
-                {/* H1 Principal Rigoroso */}
-                <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
+                {/* H1 Principal */}
+                <h1 className="text-4xl sm:text-5xl lg:text-[3.4rem] xl:text-[3.75rem] font-extrabold tracking-tight text-white leading-[1.08]">
                   Certificação, tecnologia e{" "}
-                  <span className="text-brand-sky underline decoration-brand-sky/40 underline-offset-4">
-                    confiança
-                  </span>{" "}
+                  <span className="text-brand-sky">confiança</span>{" "}
                   para o seu negócio
                 </h1>
 
                 {/* Subtítulo Parágrafo */}
-                <p className="text-base sm:text-lg text-gray-300 max-w-2xl leading-relaxed">
+                <p className="text-base sm:text-lg text-gray-300 max-w-xl leading-relaxed">
                   A Notum Tecnologia une produtos, assistência técnica e certificação digital em um único parceiro confiável para empresas que não podem errar.
                 </p>
 
@@ -114,6 +104,7 @@ export default function HomePage() {
                     isExternal
                     variant="primary"
                     size="lg"
+                    className="rounded-xl font-bold"
                     rightIcon={<ArrowRight className="w-5 h-5" />}
                   >
                     Falar com um especialista
@@ -123,6 +114,7 @@ export default function HomePage() {
                     href="/certificado-digital/"
                     variant="secondary"
                     size="lg"
+                    className="rounded-xl bg-brand-petroleum/60 border-white/25 hover:border-brand-sky/50 hover:bg-brand-petroleum-card backdrop-blur-sm"
                     leftIcon={<Lock className="w-4 h-4 text-brand-sky" />}
                   >
                     Emitir Certificado Digital
@@ -130,79 +122,25 @@ export default function HomePage() {
                 </div>
 
                 {/* Microcopy de Confiança */}
-                <div className="pt-4 flex flex-wrap items-center gap-y-2 gap-x-6 text-xs text-gray-400 border-t border-brand-slate/20">
+                <div className="pt-2 flex flex-wrap items-center gap-y-2.5 gap-x-6 text-xs text-gray-300">
                   <div className="flex items-center gap-1.5">
-                    <CheckCircle2 className="w-4 h-4 text-brand-sky" />
+                    <CheckCircle2 className="w-4 h-4 text-brand-sky flex-shrink-0" aria-hidden="true" />
                     <span>Atendimento técnico direto</span>
                   </div>
                   <div className="flex items-center gap-1.5">
-                    <CheckCircle2 className="w-4 h-4 text-brand-sky" />
+                    <CheckCircle2 className="w-4 h-4 text-brand-sky flex-shrink-0" aria-hidden="true" />
                     <span>e-CNPJ e e-CPF com agilidade</span>
                   </div>
                   <div className="flex items-center gap-1.5">
-                    <CheckCircle2 className="w-4 h-4 text-brand-sky" />
+                    <CheckCircle2 className="w-4 h-4 text-brand-sky flex-shrink-0" aria-hidden="true" />
                     <span>Suporte sem call center</span>
                   </div>
                 </div>
               </div>
 
-              {/* Coluna Visual Lateral (5 Colunas) - Vitrine de Autoridade Notum */}
+              {/* Coluna Visual Lateral (5 Colunas) - Card Glassmórfico com Escudo */}
               <div className="lg:col-span-5 relative">
-                <div className="relative mx-auto max-w-md lg:max-w-none">
-                  {/* Card Central com Efeito Tech */}
-                  <div className="relative bg-brand-petroleum-card/90 rounded-2xl border border-brand-sky/30 p-8 shadow-2xl backdrop-blur-md">
-                    {/* Header do Card */}
-                    <div className="flex items-center justify-between pb-6 border-b border-brand-slate/20">
-                      <div className="relative h-9 w-32">
-                        <Image
-                          src="/brand/logo/logo-horizontal-fundo-escuro.png"
-                          alt="Logo Notum"
-                          fill
-                          className="object-contain"
-                        />
-                      </div>
-                      <span className="px-2.5 py-1 text-[11px] font-mono font-medium rounded bg-brand-navy border border-brand-sky/30 text-brand-sky">
-                        NOTUM SYS v2.4
-                      </span>
-                    </div>
-
-                    {/* Símbolo em Destaque */}
-                    <div className="py-8 flex flex-col items-center justify-center text-center">
-                      <div className="relative w-28 h-28 mb-4 p-4 rounded-2xl bg-brand-navy border border-brand-sky/40 shadow-inner">
-                        <Image
-                          src="/brand/logo/simbolo.png"
-                          alt="Símbolo Notum Tecnologia"
-                          fill
-                          className="object-contain p-2"
-                        />
-                      </div>
-                      <h2 className="text-xl font-bold tracking-tight text-white">
-                        Confiabilidade & Autenticidade
-                      </h2>
-                      <p className="text-xs text-gray-300 mt-1 max-w-xs">
-                        &quot;Notum&quot;, do latim: <strong>certificar</strong>. Investigação técnica rigorosa e processos sem fricção.
-                      </p>
-                    </div>
-
-                    {/* Destaques Rápidos */}
-                    <div className="grid grid-cols-2 gap-3 pt-4 border-t border-brand-slate/20">
-                      <div className="p-3 rounded-lg bg-brand-petroleum/60 border border-brand-slate/30">
-                        <span className="block text-xl font-bold text-brand-sky">27+</span>
-                        <span className="text-[11px] text-gray-400">Anos de atuação</span>
-                      </div>
-                      <div className="p-3 rounded-lg bg-brand-petroleum/60 border border-brand-slate/30">
-                        <span className="block text-xl font-bold text-brand-sky">100%</span>
-                        <span className="text-[11px] text-gray-400">Suporte direto</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Detalhe de Borda Decorativa */}
-                  <div
-                    className="absolute -inset-1 rounded-2xl bg-gradient-brand opacity-20 blur-sm -z-10"
-                    aria-hidden="true"
-                  />
-                </div>
+                <HeroAuthorityCard />
               </div>
             </div>
           </div>
