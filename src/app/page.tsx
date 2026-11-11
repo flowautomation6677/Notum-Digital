@@ -90,7 +90,7 @@ export default function HomePage() {
                 {/* Badge de Autoridade */}
                 <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-brand-sky/10 border border-brand-sky/30 text-brand-sky text-xs font-semibold uppercase tracking-wider">
                   <ShieldCheck className="w-4 h-4 text-brand-sky" />
-                  <span>Em atividade desde 1998 · Mesquita - RJ</span>
+                  <span>Em atividade desde 1998 · Mesquita (RJ) e todo o Brasil</span>
                 </div>
 
                 {/* H1 Principal Rigoroso */}
@@ -146,7 +146,7 @@ export default function HomePage() {
                 </div>
               </div>
 
-              {/* Coluna Visual Lateral (5 Colunas) — Vitrine de Autoridade Notum */}
+              {/* Coluna Visual Lateral (5 Colunas) - Vitrine de Autoridade Notum */}
               <div className="lg:col-span-5 relative">
                 <div className="relative mx-auto max-w-md lg:max-w-none">
                   {/* Card Central com Efeito Tech */}
@@ -251,7 +251,7 @@ export default function HomePage() {
                 </p>
 
                 <p className="text-base text-gray-300 leading-relaxed">
-                  Do suporte técnico do dia a dia à emissão de certificados digitais que sua empresa não pode ficar sem, a Notum existe para eliminar a insegurança da tecnologia no seu negócio. Em atividade desde 1998, com sede em Mesquita (RJ).
+                  Do suporte técnico do dia a dia à emissão de certificados digitais que sua empresa não pode ficar sem, a Notum existe para eliminar a insegurança da tecnologia no seu negócio. Em atividade desde 1998, com escritório em Mesquita (RJ) e atendimento para todo o Brasil.
                 </p>
 
                 <div className="pt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -261,7 +261,7 @@ export default function HomePage() {
                       Sede Própria no RJ
                     </h4>
                     <p className="text-xs text-gray-400">
-                      Localizada em Mesquita, atendendo empresas e profissionais de toda a região e online.
+                      Localizada em Mesquita (RJ), com atendimento presencial e suporte online para empresas de todo o Brasil.
                     </p>
                   </div>
                   <div className="p-4 rounded-xl bg-brand-petroleum-card border border-brand-slate/30">
@@ -314,7 +314,7 @@ export default function HomePage() {
                       Certificado Digital
                     </h3>
                     <p className="text-sm text-gray-300 leading-relaxed">
-                      Emissão de certificados digitais (e-CNPJ, e-CPF e outros) com atendimento direto e suporte em toda a documentação — sem deixar sua empresa travada por um certificado vencido.
+                      Emissão de certificados digitais (e-CNPJ, e-CPF e outros) com atendimento direto e suporte em toda a documentação, sem deixar sua empresa travada por um certificado vencido.
                     </p>
                   </div>
                   <ul className="space-y-2.5 text-xs text-gray-300 pt-2 border-t border-brand-slate/20">
@@ -462,7 +462,7 @@ export default function HomePage() {
                 <div className="text-brand-sky font-bold text-2xl">01</div>
                 <h4 className="font-bold text-lg text-white">Atendimento Direto</h4>
                 <p className="text-xs sm:text-sm text-gray-300 leading-relaxed">
-                  Atendimento técnico direto, sem enrolação — você fala com quem entende do assunto e resolve sua pendência.
+                  Atendimento técnico direto, sem enrolação. Você fala com quem entende do assunto e resolve sua pendência.
                 </p>
               </div>
 
@@ -480,7 +480,7 @@ export default function HomePage() {
                 <div className="text-brand-sky font-bold text-2xl">03</div>
                 <h4 className="font-bold text-lg text-white">Parceiro Único</h4>
                 <p className="text-xs sm:text-sm text-gray-300 leading-relaxed">
-                  Um único parceiro para tecnologia, suporte e certificação — menos fornecedores e faturas para gerenciar.
+                  Um único parceiro para tecnologia, suporte e certificação: menos fornecedores e faturas para gerenciar.
                 </p>
               </div>
 
@@ -504,10 +504,10 @@ export default function HomePage() {
           imageLayout="right"
           eyebrow="Liderança & Atendimento"
           title="Quem está à frente da Notum Digital"
-          lead="Sob a direção de Vinicius Carpes, a Notum une rigor técnico e atendimento próximo — da certificação digital à assistência técnica e soluções em TI."
+          lead="Sob a direção de Vinicius Carpes, a Notum une rigor técnico e atendimento próximo, da certificação digital à assistência técnica e soluções em TI."
           paragraphs={[
             "Tecnologia corporativa exige confiança. Quando um certificado vence, um equipamento para ou sua empresa precisa estruturar a operação, ninguém quer perder horas repetindo o mesmo problema para atendentes diferentes.",
-            "À frente da Notum Digital, Vinicius Carpes mantém um padrão simples e raro no setor: atendimento técnico direto, diagnóstico transparente e compromisso real com prazos. Dando continuidade a uma história construída desde 1998 em Mesquita (RJ), cada entrega carrega a mesma seriedade — você sabe exatamente com quem está falando e quem responde pelo resultado.",
+            "À frente da Notum Digital, Vinicius Carpes mantém um padrão simples e raro no setor: atendimento técnico direto, diagnóstico transparente e compromisso real com prazos. Com escritório físico em Mesquita (RJ) e atendimento para todo o Brasil, a operação dá continuidade a uma história construída desde 1998. Você sabe exatamente com quem está falando e quem responde pelo resultado.",
           ]}
           quote="Tecnologia precisa trabalhar a favor do seu negócio. Nosso compromisso é entregar segurança, clareza e um atendimento em que você pode confiar de verdade."
           highlights={[
@@ -520,8 +520,8 @@ export default function HomePage() {
               description: "Certificação digital, suporte especializado e equipamentos no mesmo lugar.",
             },
             {
-              label: "Raiz no RJ",
-              description: "Sede própria no BNH, em Mesquita, atendendo presencialmente e online.",
+              label: "Todo o Brasil",
+              description: "Atendimento online em todo o país e escritório físico em Mesquita (RJ).",
             },
           ]}
           ctaLabel="Falar com a equipe da Notum"

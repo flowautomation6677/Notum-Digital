@@ -8,7 +8,7 @@ export function cn(...inputs: ClassValue[]) {
 // Configuração do WhatsApp da Notum
 export const NOTUM_WHATSAPP = "5521964238864";
 export const NOTUM_PHONE_DISPLAY = "(21) 96423-8864";
-export const NOTUM_ADDRESS = "Av. Coelho da Rocha, nº 1030 — Bairro BNH, Mesquita - RJ, CEP 26.574-391";
+export const NOTUM_ADDRESS = "Av. Coelho da Rocha, nº 1030, Bairro BNH, Mesquita - RJ, CEP 26.574-391";
 export const NOTUM_CNPJ = "02.765.891/0001-00";
 
 export function getWhatsAppLink(message: string) {

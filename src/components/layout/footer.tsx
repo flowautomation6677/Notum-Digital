@@ -140,7 +140,7 @@ export function Footer() {
         {/* Rodapé Legal */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
           <p>
-            © 2026 Notum Tecnologia e Soluções Ltda — CNPJ {NOTUM_CNPJ}. Todos os direitos reservados.
+            © 2026 Notum Tecnologia e Soluções Ltda · CNPJ {NOTUM_CNPJ}. Todos os direitos reservados.
           </p>
           <p className="text-gray-600">
             Tecnologia, Assistência e Certificação Digital

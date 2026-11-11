@@ -125,7 +125,7 @@ export default function CertificadoDigitalPage() {
                 </div>
 
                 <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold tracking-tight text-white leading-[1.12]">
-                  Seu certificado digital, emitido hoje —{" "}
+                  Seu certificado digital, emitido hoje:{" "}
                   <span className="text-brand-sky underline decoration-brand-sky/40 underline-offset-4">
                     sem fila, sem enrolação
                   </span>
@@ -163,8 +163,10 @@ export default function CertificadoDigitalPage() {
                 {/* Linha de Confiança (Microcopy) */}
                 <div className="pt-4 border-t border-brand-slate/20 text-xs text-gray-300 flex flex-wrap gap-x-4 gap-y-2">
                   <span className="font-semibold text-white">
-                    Em atividade desde 1998, em Mesquita (RJ)
+                    Escritório em Mesquita (RJ) e atendimento em todo o Brasil
                   </span>
+                  <span className="text-brand-slate">•</span>
+                  <span>Desde 1998</span>
                   <span className="text-brand-slate">•</span>
                   <span>Atendimento direto, sem call center</span>
                   <span className="text-brand-slate">•</span>
@@ -172,7 +174,7 @@ export default function CertificadoDigitalPage() {
                 </div>
               </div>
 
-              {/* Coluna Visual (5 Colunas) — Lupa em Traço Fino Sangrando */}
+              {/* Coluna Visual (5 Colunas) - Lupa em Traço Fino Sangrando */}
               <div className="lg:col-span-5 relative flex justify-center">
                 <div className="relative w-full max-w-md bg-brand-petroleum-card/90 rounded-2xl border border-brand-sky/40 p-8 shadow-2xl backdrop-blur-md space-y-6">
                   <div className="flex items-center justify-between border-b border-brand-slate/20 pb-4">
@@ -313,7 +315,7 @@ export default function CertificadoDigitalPage() {
             {/* Fechamento com CTA */}
             <div className="mt-12 text-center space-y-4 max-w-xl mx-auto">
               <p className="text-sm sm:text-base text-gray-300 font-medium">
-                Quanto mais você adia, maior o risco de precisar resolver isso correndo — sem tempo para escolher com calma.
+                Quanto mais você adia, maior o risco de precisar resolver isso correndo, sem tempo para escolher com calma.
               </p>
               <Button
                 href={getWhatsAppLink("Olá! Meu certificado está vencido/vencendo e preciso resolver agora.")}
@@ -337,7 +339,7 @@ export default function CertificadoDigitalPage() {
                 Processo Transparente
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white">
-                Do primeiro contato ao certificado em mãos — sem mistério
+                Do primeiro contato ao certificado em mãos, sem mistério
               </h2>
               <p className="text-base sm:text-lg text-gray-300">
                 Sem filas e sem jargões burocráticos. Você sabe exatamente o que está acontecendo em cada etapa.
@@ -364,7 +366,7 @@ export default function CertificadoDigitalPage() {
                   Você envia os documentos
                 </h3>
                 <p className="text-xs sm:text-sm text-gray-300 leading-relaxed">
-                  Lista simples e objetiva — avisamos exatamente o que falta para não perder tempo.
+                  Lista simples e objetiva: avisamos exatamente o que falta para não perder tempo.
                 </p>
               </div>
 
@@ -466,7 +468,7 @@ export default function CertificadoDigitalPage() {
                     Quase 3 décadas de mercado
                   </h4>
                   <p className="text-xs sm:text-sm text-gray-200 leading-relaxed mt-2">
-                    A Notum está em atividade desde 1998, com sede física em Mesquita (RJ). Segurança jurídica comprovada por quem conhece o mercado corporativo.
+                    A Notum está em atividade desde 1998, com escritório físico em Mesquita (RJ) e atendimento online para todo o Brasil. Segurança jurídica comprovada por quem conhece o mercado corporativo.
                   </p>
                 </div>
                 <div className="pt-2 text-xs font-mono text-brand-sky">
@@ -485,10 +487,10 @@ export default function CertificadoDigitalPage() {
           imageLayout="left"
           eyebrow="Quem responde pelo seu certificado"
           title="Por trás da Notum Digital: atendimento direto com quem entende e assume a responsabilidade"
-          lead="À frente da Notum Digital, Vinicius Carpes conduz uma operação pensada para resolver — sem robôs, sem fila de espera e sem empurrar o seu problema para outro setor."
+          lead="À frente da Notum Digital, Vinicius Carpes conduz uma operação pensada para resolver, sem robôs, sem fila de espera e sem empurrar o seu problema para outro setor."
           paragraphs={[
-            "Emitir ou renovar um certificado digital quase sempre acontece em um momento de urgência: uma nota fiscal parada, um contrato aguardando assinatura ou um prazo contábil que não pode esperar. Na Notum Digital, você não fica preso a um atendimento engessado de call center — você fala com uma equipe liderada de perto por quem domina cada etapa da validação.",
-            "Com sede própria em Mesquita (RJ) e dando continuidade a uma trajetória iniciada em 1998, a Notum une rigor técnico e clareza do início ao fim. Da conferência dos documentos ao certificado funcionando no seu sistema, o compromisso de Vinicius Carpes é direto: transparência total para manter sua empresa operando sem travas.",
+            "Emitir ou renovar um certificado digital quase sempre acontece em um momento de urgência: uma nota fiscal parada, um contrato aguardando assinatura ou um prazo contábil que não pode esperar. Na Notum Digital, você não fica preso a um atendimento engessado de call center. Aqui, você fala com uma equipe liderada de perto por quem domina cada etapa da validação.",
+            "Com escritório físico em Mesquita (RJ) e atendimento por videoconferência para todo o Brasil, a Notum dá continuidade a uma trajetória iniciada em 1998 unindo rigor técnico e clareza do início ao fim. Da conferência dos documentos ao certificado funcionando no seu sistema, o compromisso de Vinicius Carpes é direto: transparência total para manter sua empresa operando sem travas.",
           ]}
           quote="Certificado digital não pode ser uma dor de cabeça burocrática. Nosso papel é orientar com clareza, validar com agilidade e garantir que você saia operando com segurança."
           highlights={[
@@ -497,8 +499,8 @@ export default function CertificadoDigitalPage() {
               description: "Acompanhamento próximo da equipe e do padrão de qualidade em cada emissão.",
             },
             {
-              label: "Presencial ou online",
-              description: "Validação na sede em Mesquita (RJ) ou por videoconferência com hora marcada.",
+              label: "Todo o Brasil",
+              description: "Emissão por videoconferência em todo o país ou presencial no escritório em Mesquita (RJ).",
             },
             {
               label: "Suporte pós-emissão",
@@ -561,7 +563,7 @@ export default function CertificadoDigitalPage() {
             </h2>
 
             <p className="text-base sm:text-xl text-gray-200 leading-relaxed">
-              Fale com a Notum agora e resolva isso ainda hoje — antes que vire um problema maior do que precisava ser.
+              Fale com a Notum agora e resolva isso ainda hoje, antes que vire um problema maior do que precisava ser.
             </p>
 
             <div className="pt-2">
@@ -577,7 +579,7 @@ export default function CertificadoDigitalPage() {
             </div>
 
             <p className="text-xs text-gray-300 italic pt-1">
-              Atendimento sem compromisso — você só decide depois de saber exatamente o que precisa.
+              Atendimento sem compromisso: você só decide depois de saber exatamente o que precisa.
             </p>
           </div>
         </section>

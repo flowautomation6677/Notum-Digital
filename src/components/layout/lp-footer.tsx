@@ -70,7 +70,7 @@ export function LPFooter() {
         </div>
 
         <p className="text-xs text-gray-500 pt-2 border-t border-brand-slate/10">
-          © 2026 Notum Tecnologia e Soluções Ltda — CNPJ {NOTUM_CNPJ}. Todos os direitos reservados.
+          © 2026 Notum Tecnologia e Soluções Ltda · CNPJ {NOTUM_CNPJ}. Todos os direitos reservados.
         </p>
       </div>
     </footer>
