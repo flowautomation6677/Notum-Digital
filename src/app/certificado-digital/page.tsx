@@ -22,6 +22,7 @@ import { Accordion, FAQItem } from "@/components/ui/accordion";
 import { WhatsAppFloating } from "@/components/ui/whatsapp-floating";
 import { NotumGeometricPattern, TechnicalGridOverlay } from "@/components/brand/geometric-pattern";
 import { GoogleReviewsSection } from "@/components/brand/google-reviews-section";
+import { FounderSection } from "@/components/brand/founder-section";
 import { getWhatsAppLink } from "@/lib/utils";
 
 export const metadata: Metadata = {
@@ -477,7 +478,39 @@ export default function CertificadoDigitalPage() {
         </section>
 
         {/* =========================================================
-            5. PROVA SOCIAL & AVALIAÇÕES GOOGLE 5 ESTRELAS
+            5. QUEM RESPONDE PELO SEU CERTIFICADO (VINICIUS CARPES)
+        ========================================================= */}
+        <FounderSection
+          id="vinicius-carpes"
+          imageLayout="left"
+          eyebrow="Quem responde pelo seu certificado"
+          title="Por trás da Notum Digital: atendimento direto com quem entende e assume a responsabilidade"
+          lead="À frente da Notum Digital, Vinicius Carpes conduz uma operação pensada para resolver — sem robôs, sem fila de espera e sem empurrar o seu problema para outro setor."
+          paragraphs={[
+            "Emitir ou renovar um certificado digital quase sempre acontece em um momento de urgência: uma nota fiscal parada, um contrato aguardando assinatura ou um prazo contábil que não pode esperar. Na Notum Digital, você não fica preso a um atendimento engessado de call center — você fala com uma equipe liderada de perto por quem domina cada etapa da validação.",
+            "Com sede própria em Mesquita (RJ) e dando continuidade a uma trajetória iniciada em 1998, a Notum une rigor técnico e clareza do início ao fim. Da conferência dos documentos ao certificado funcionando no seu sistema, o compromisso de Vinicius Carpes é direto: transparência total para manter sua empresa operando sem travas.",
+          ]}
+          quote="Certificado digital não pode ser uma dor de cabeça burocrática. Nosso papel é orientar com clareza, validar com agilidade e garantir que você saia operando com segurança."
+          highlights={[
+            {
+              label: "Liderança presente",
+              description: "Acompanhamento próximo da equipe e do padrão de qualidade em cada emissão.",
+            },
+            {
+              label: "Presencial ou online",
+              description: "Validação na sede em Mesquita (RJ) ou por videoconferência com hora marcada.",
+            },
+            {
+              label: "Suporte pós-emissão",
+              description: "Orientação objetiva na instalação e no uso, sem deixar o cliente na mão.",
+            },
+          ]}
+          ctaLabel="Falar com a equipe da Notum"
+          whatsappMessage="Olá! Vi a página de Certificado Digital da Notum Digital e gostaria de falar com a equipe do Vinicius Carpes."
+        />
+
+        {/* =========================================================
+            6. PROVA SOCIAL & AVALIAÇÕES GOOGLE 5 ESTRELAS
         ========================================================= */}
         <GoogleReviewsSection
           id="avaliacoes"
@@ -487,7 +520,7 @@ export default function CertificadoDigitalPage() {
         />
 
         {/* =========================================================
-            6. PERGUNTAS FREQUENTES (COLUNA ÚNICA MAX-W-3XL)
+            7. PERGUNTAS FREQUENTES (COLUNA ÚNICA MAX-W-3XL)
         ========================================================= */}
         <section className="py-24 sm:py-32 bg-brand-petroleum">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -509,7 +542,7 @@ export default function CertificadoDigitalPage() {
         </section>
 
         {/* =========================================================
-            7. CTA FINAL (REVERSÃO DE RISCO E WHATSAPP DIRETO)
+            8. CTA FINAL (REVERSÃO DE RISCO E WHATSAPP DIRETO)
         ========================================================= */}
         <section
           id="final-cta-section"

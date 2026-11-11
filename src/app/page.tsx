@@ -23,6 +23,7 @@ import { Accordion, FAQItem } from "@/components/ui/accordion";
 import { WhatsAppFloating } from "@/components/ui/whatsapp-floating";
 import { NotumGeometricPattern, TechnicalGridOverlay } from "@/components/brand/geometric-pattern";
 import { GoogleReviewsSection } from "@/components/brand/google-reviews-section";
+import { FounderSection } from "@/components/brand/founder-section";
 import { getWhatsAppLink } from "@/lib/utils";
 
 export default function HomePage() {
@@ -496,7 +497,39 @@ export default function HomePage() {
         </section>
 
         {/* =========================================================
-            5. PROVA SOCIAL & AVALIAÇÕES GOOGLE 5 ESTRELAS
+            5. QUEM ESTÁ À FRENTE (VINICIUS CARPES)
+        ========================================================= */}
+        <FounderSection
+          id="lideranca"
+          imageLayout="right"
+          eyebrow="Liderança & Atendimento"
+          title="Quem está à frente da Notum Digital"
+          lead="Sob a direção de Vinicius Carpes, a Notum une rigor técnico e atendimento próximo — da certificação digital à assistência técnica e soluções em TI."
+          paragraphs={[
+            "Tecnologia corporativa exige confiança. Quando um certificado vence, um equipamento para ou sua empresa precisa estruturar a operação, ninguém quer perder horas repetindo o mesmo problema para atendentes diferentes.",
+            "À frente da Notum Digital, Vinicius Carpes mantém um padrão simples e raro no setor: atendimento técnico direto, diagnóstico transparente e compromisso real com prazos. Dando continuidade a uma história construída desde 1998 em Mesquita (RJ), cada entrega carrega a mesma seriedade — você sabe exatamente com quem está falando e quem responde pelo resultado.",
+          ]}
+          quote="Tecnologia precisa trabalhar a favor do seu negócio. Nosso compromisso é entregar segurança, clareza e um atendimento em que você pode confiar de verdade."
+          highlights={[
+            {
+              label: "Atendimento direto",
+              description: "Contato objetivo com quem entende da parte técnica e resolve.",
+            },
+            {
+              label: "Visão integrada",
+              description: "Certificação digital, suporte especializado e equipamentos no mesmo lugar.",
+            },
+            {
+              label: "Raiz no RJ",
+              description: "Sede própria no BNH, em Mesquita, atendendo presencialmente e online.",
+            },
+          ]}
+          ctaLabel="Falar com a equipe da Notum"
+          whatsappMessage="Olá! Vim pelo site da Notum Digital e gostaria de atendimento com a equipe do Vinicius Carpes."
+        />
+
+        {/* =========================================================
+            6. PROVA SOCIAL & AVALIAÇÕES GOOGLE 5 ESTRELAS
         ========================================================= */}
         <GoogleReviewsSection
           id="avaliacoes"
@@ -506,7 +539,7 @@ export default function HomePage() {
         />
 
         {/* =========================================================
-            6. PERGUNTAS FREQUENTES
+            7. PERGUNTAS FREQUENTES
         ========================================================= */}
         <section id="faq" className="py-24 sm:py-32 bg-brand-petroleum">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -527,7 +560,7 @@ export default function HomePage() {
         </section>
 
         {/* =========================================================
-            7. CTA FINAL
+            8. CTA FINAL
         ========================================================= */}
         <section
           id="final-cta-section"
