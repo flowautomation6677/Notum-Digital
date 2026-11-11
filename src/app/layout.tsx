@@ -14,9 +14,10 @@ export const metadata: Metadata = {
     template: "%s | Notum Tecnologia",
   },
   description:
-    "A Notum Tecnologia une produtos, assistência técnica e certificação digital em um único parceiro confiável em Mesquita - RJ. Em atividade desde 1998.",
+    "A Notum Tecnologia une produtos, assistência técnica e certificação digital em todo o Brasil, com escritório em Mesquita (RJ). Em atividade desde 1998.",
   keywords: [
     "Certificado Digital",
+    "Certificado Digital Online",
     "e-CNPJ",
     "e-CPF",
     "Assistência Técnica",
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
     siteName: "Notum Tecnologia",
     title: "Notum Tecnologia | Certificação, Tecnologia e Confiança",
     description:
-      "Do suporte do dia a dia à emissão de certificados digitais e-CNPJ e e-CPF com agilidade e atendimento direto.",
+      "Do suporte do dia a dia à emissão de certificados digitais e-CNPJ e e-CPF para todo o Brasil, com agilidade e atendimento direto.",
     images: [
       {
         url: "/brand/logo/logo-principal.png",
@@ -52,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Notum Tecnologia | Certificação e TI",
     description:
-      "A Notum une assistência técnica, produtos e certificados digitais em Mesquita (RJ). Desde 1998.",
+      "A Notum une assistência técnica, produtos e certificados digitais em todo o Brasil, com escritório em Mesquita (RJ). Desde 1998.",
     images: ["/brand/logo/logo-principal.png"],
   },
   robots: {
@@ -84,10 +85,16 @@ export default function RootLayout({
       postalCode: "26574-391",
       addressCountry: "BR",
     },
-    areaServed: {
-      "@type": "AdministrativeArea",
-      name: "Rio de Janeiro",
-    },
+    areaServed: [
+      {
+        "@type": "Country",
+        name: "Brasil",
+      },
+      {
+        "@type": "AdministrativeArea",
+        name: "Rio de Janeiro",
+      },
+    ],
     url: "https://notumtecnologia.com.br",
     logo: "https://notumtecnologia.com.br/brand/logo/logo-principal.png",
     image: "https://notumtecnologia.com.br/brand/logo/logo-principal.png",

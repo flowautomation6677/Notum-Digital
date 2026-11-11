@@ -24,26 +24,26 @@ export function HeroAuthorityCard() {
       />
 
       {/* Card Glassmórfico Principal */}
-      <div className="relative overflow-hidden rounded-3xl border border-white/15 bg-gradient-to-b from-white/[0.11] via-[#1b2b38]/85 to-[#141f2a]/95 p-7 sm:p-9 shadow-[0_24px_60px_-15px_rgba(0,0,0,0.65)] backdrop-blur-xl">
+      <div className="relative overflow-hidden rounded-3xl border border-white/20 bg-gradient-to-b from-white/[0.12] via-[#1b2b38]/80 to-[#141f2a]/95 p-7 sm:p-9 shadow-[0_24px_60px_-15px_rgba(0,0,0,0.65)] backdrop-blur-xl">
         {/* Linha especular no topo do card */}
         <div
-          className="absolute inset-x-10 top-0 h-px bg-gradient-to-r from-transparent via-brand-sky/65 to-transparent pointer-events-none"
+          className="absolute inset-x-10 top-0 h-px bg-gradient-to-r from-transparent via-brand-sky/75 to-transparent pointer-events-none"
           aria-hidden="true"
         />
 
         {/* Luz interna atrás do escudo */}
         <div
-          className="absolute top-3 left-1/2 -translate-x-1/2 w-56 h-56 rounded-full bg-brand-sky/20 blur-3xl pointer-events-none"
+          className="absolute top-2 left-1/2 -translate-x-1/2 w-60 h-60 rounded-full bg-brand-sky/25 blur-3xl pointer-events-none"
           aria-hidden="true"
         />
 
         {/* Ilustração 3D: Certificado Digital + Escudo com Cadeado */}
-        <div className="relative mx-auto w-44 h-40 sm:w-48 sm:h-44 flex items-center justify-center mb-4">
+        <div className="relative mx-auto w-44 h-40 sm:w-48 sm:h-44 flex items-center justify-center mb-5">
           <svg
             viewBox="0 0 220 180"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="w-full h-full drop-shadow-[0_14px_28px_rgba(135,206,235,0.28)]"
+            className="w-full h-full drop-shadow-[0_16px_32px_rgba(135,206,235,0.34)]"
             aria-hidden="true"
           >
             <defs>

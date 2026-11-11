@@ -25,6 +25,7 @@ import { NotumGeometricPattern, TechnicalGridOverlay } from "@/components/brand/
 import { GoogleReviewsSection } from "@/components/brand/google-reviews-section";
 import { FounderSection } from "@/components/brand/founder-section";
 import { HeroAuthorityCard } from "@/components/brand/hero-authority-card";
+import { AboutSymbolCard } from "@/components/brand/about-symbol-card";
 import { getWhatsAppLink } from "@/lib/utils";
 
 export default function HomePage() {
@@ -68,12 +69,12 @@ export default function HomePage() {
           className="relative min-h-[90vh] flex items-center justify-center pt-32 pb-24 overflow-hidden bg-gradient-brand-subtle"
         >
           {/* Background Textures */}
-          <NotumGeometricPattern opacity={0.18} />
           <div
-            className="absolute inset-0 bg-gradient-to-r from-[#131b2c]/80 via-[#18242A]/35 to-[#131b2c]/55 pointer-events-none"
+            className="absolute inset-0 bg-gradient-to-r from-[#131b2c]/70 via-[#18242A]/25 to-[#131b2c]/45 pointer-events-none"
             aria-hidden="true"
           />
-          <TechnicalGridOverlay className="opacity-30" />
+          <NotumGeometricPattern opacity={0.16} />
+          <TechnicalGridOverlay className="opacity-25" />
 
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-10">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
@@ -151,36 +152,23 @@ export default function HomePage() {
         ========================================================= */}
         <section
           id="sobre"
-          className="relative py-24 sm:py-32 bg-[#141e23] border-t border-b border-brand-slate/20 overflow-hidden"
+          className="relative py-24 sm:py-32 bg-[#111921] border-t border-b border-brand-slate/20 overflow-hidden"
         >
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-              {/* Asset Visual: Símbolo Isolado Grande */}
+              {/* Asset Visual: Card Glassmórfico com Lupa Luminosa */}
               <div className="lg:col-span-5 flex justify-center order-2 lg:order-1">
-                <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-3xl bg-gradient-to-br from-brand-navy via-brand-petroleum-card to-brand-petroleum p-8 border border-brand-sky/30 shadow-2xl flex items-center justify-center">
-                  <div className="relative w-full h-full">
-                    <Image
-                      src="/brand/logo/simbolo-fundo-escuro.png"
-                      alt="Símbolo Notum - Lupa e N"
-                      fill
-                      className="object-contain drop-shadow-[0_10px_20px_rgba(135,206,235,0.15)]"
-                    />
-                  </div>
-                  {/* Etiqueta Flutuante de Origem */}
-                  <div className="absolute -bottom-4 bg-brand-petroleum border border-brand-sky/40 px-4 py-2 rounded-full shadow-lg text-xs font-semibold text-brand-sky tracking-wider uppercase">
-                    Origem do Nome: Notum
-                  </div>
-                </div>
+                <AboutSymbolCard />
               </div>
 
               {/* Conteúdo Textual */}
               <div className="lg:col-span-7 space-y-6 order-1 lg:order-2">
-                <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-brand-sky">
-                  <Search className="w-4 h-4 text-brand-sky" />
-                  <span>História & Propósito</span>
+                <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-brand-sky/90">
+                  <Search className="w-4 h-4 text-brand-sky" aria-hidden="true" />
+                  <span>História &amp; Propósito</span>
                 </div>
 
-                <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
+                <h2 className="text-3xl sm:text-4xl lg:text-[2.6rem] font-extrabold tracking-tight text-white">
                   Por que &quot;Notum&quot;
                 </h2>
 
@@ -193,21 +181,30 @@ export default function HomePage() {
                 </p>
 
                 <div className="pt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="p-4 rounded-xl bg-brand-petroleum-card border border-brand-slate/30">
-                    <h4 className="font-bold text-white text-sm mb-1 flex items-center gap-2">
-                      <Building2 className="w-4 h-4 text-brand-sky" />
-                      Sede Própria no RJ
-                    </h4>
-                    <p className="text-xs text-gray-400">
+                  <div className="relative overflow-hidden p-5 rounded-2xl bg-gradient-to-b from-white/[0.07] to-[#131e28]/90 border border-white/15 hover:border-brand-sky/35 shadow-lg backdrop-blur-md transition-colors">
+                    <div
+                      className="absolute inset-x-5 top-0 h-px bg-gradient-to-r from-transparent via-brand-sky/35 to-transparent pointer-events-none"
+                      aria-hidden="true"
+                    />
+                    <h3 className="font-bold text-white text-sm mb-1.5 flex items-center gap-2">
+                      <Building2 className="w-4 h-4 text-brand-sky flex-shrink-0" aria-hidden="true" />
+                      <span>Sede Própria no RJ</span>
+                    </h3>
+                    <p className="text-xs text-gray-300/85 leading-relaxed">
                       Localizada em Mesquita (RJ), com atendimento presencial e suporte online para empresas de todo o Brasil.
                     </p>
                   </div>
-                  <div className="p-4 rounded-xl bg-brand-petroleum-card border border-brand-slate/30">
-                    <h4 className="font-bold text-white text-sm mb-1 flex items-center gap-2">
-                      <Award className="w-4 h-4 text-brand-sky" />
-                      Desde 1998
-                    </h4>
-                    <p className="text-xs text-gray-400">
+
+                  <div className="relative overflow-hidden p-5 rounded-2xl bg-gradient-to-b from-white/[0.07] to-[#131e28]/90 border border-white/15 hover:border-brand-sky/35 shadow-lg backdrop-blur-md transition-colors">
+                    <div
+                      className="absolute inset-x-5 top-0 h-px bg-gradient-to-r from-transparent via-brand-sky/35 to-transparent pointer-events-none"
+                      aria-hidden="true"
+                    />
+                    <h3 className="font-bold text-white text-sm mb-1.5 flex items-center gap-2">
+                      <Award className="w-4 h-4 text-brand-sky flex-shrink-0" aria-hidden="true" />
+                      <span>Desde 1998</span>
+                    </h3>
+                    <p className="text-xs text-gray-300/85 leading-relaxed">
                       Quase 3 décadas de solidez contínua, compromisso ético e suporte sem rodeios.
                     </p>
                   </div>

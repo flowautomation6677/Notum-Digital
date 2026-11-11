@@ -28,11 +28,11 @@ import { getWhatsAppLink } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "Certificado Digital e-CNPJ e e-CPF Emitido Hoje | Notum Tecnologia",
   description:
-    "Emita ou renove seu certificado digital e-CNPJ ou e-CPF sem fila e sem burocracia. Atendimento direto e validação rápida por videoconferência ou presencial em Mesquita - RJ.",
+    "Emita ou renove seu certificado digital e-CNPJ ou e-CPF sem fila e sem burocracia. Atendimento direto para todo o Brasil por videoconferência ou presencial em Mesquita - RJ.",
   openGraph: {
     title: "Emita seu Certificado Digital Hoje | Notum Tecnologia",
     description:
-      "e-CNPJ e e-CPF sem burocracia. Atendimento humanizado e emissão no mesmo dia com a Notum Tecnologia.",
+      "e-CNPJ e e-CPF sem burocracia para todo o Brasil. Atendimento humanizado e emissão rápida por videoconferência ou em nosso escritório em Mesquita (RJ).",
     url: "https://notumtecnologia.com.br/certificado-digital/",
   },
 };
